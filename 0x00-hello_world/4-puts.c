@@ -2,11 +2,10 @@
 
 
 /**
- * Main function
+ * main - Program entry point 
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
