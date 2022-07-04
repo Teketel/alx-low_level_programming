@@ -18,7 +18,6 @@ int main(void)
 			d = 'Z';
 		}
 	}
-	putchar(36);
 	putchar(10);
 
 	return (0);
