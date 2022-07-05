@@ -1,4 +1,3 @@
-#include "_putchar.h"
 /**
  * _islower - _islower write a function that checks for lowercase character.
  *  @c: The character to check
