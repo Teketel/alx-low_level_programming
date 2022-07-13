@@ -28,34 +28,24 @@ char *leet(char *s)
 		{
 			case 'a':
 				s[i] = '4';
-				break;
 			case 'A':
 				s[i] = '4';
-				break;
 			case 'e':
 				s[i] = '3';
-				break;
 			case 'E':
 				s[i] = '3';
-				break;
 			case 'o':
 				s[i] = '0';
-				break;
 			case 'O':
 				s[i] = '0';
-				break;
 			case 't':
 				s[i] = '7';
-				break;
 			case 'T':
 				s[i] = '7';
-				break;
 			case 'l':
 				s[i] = '1';
-				break;
 			case 'L':
 				s[i] = '1';
-				break;
 			default:
 				break;
 		}
