@@ -3,7 +3,7 @@
 /**
  * leet - encode a string into 1337
  * @s: string
- * Description: 
+ * Description:
  * Letters a and A should be replaced by 4
  * Letters e and E should be replaced by 3
  * Letters o and O should be replaced by 0
@@ -14,7 +14,7 @@
  * You can only use two loops in your code
  * You are not allowed to use switch
  * You are not allowed to use any ternary operation
- * 
+ *
  * Return: encoded string `s`
  */
 
@@ -60,6 +60,5 @@ char *leet(char *s)
 				break;
 		}
 	}
-
 	return (s);
 }
