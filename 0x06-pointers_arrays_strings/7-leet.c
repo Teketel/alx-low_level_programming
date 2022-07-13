@@ -24,31 +24,18 @@ char *leet(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		switch (s[i])
-		{
-			case 'a':
-				s[i] = '4';
-			case 'A':
-				s[i] = '4';
-			case 'e':
-				s[i] = '3';
-			case 'E':
-				s[i] = '3';
-			case 'o':
-				s[i] = '0';
-			case 'O':
-				s[i] = '0';
-			case 't':
-				s[i] = '7';
-			case 'T':
-				s[i] = '7';
-			case 'l':
-				s[i] = '1';
-			case 'L':
-				s[i] = '1';
-			default:
-				break;
-		}
+		while (s[i] == 'a' || s[i] == 'A')
+			s[i] = '4';
+		while (s[i] == 'e' || s[i] == 'E')
+			s[i] = '3';
+		while (s[i] == 'o' || s[i] == 'O')
+			s[i] = '0';
+		while (s[i] == 't' || s[i] == 'T')
+			s[i] = '7';
+		while (s[i] == 'l' || s[i] == 'L')
+			s[i] = '1';
 	}
+
 	return (s);
 }
+
