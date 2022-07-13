@@ -1,39 +1,30 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * leet - encode a string into 1337
- * @s: string
- * Description:
- * Letters a and A should be replaced by 4
- * Letters e and E should be replaced by 3
- * Letters o and O should be replaced by 0
- * Letters t and T should be replaced by 7
- * Letters l and L should be replaced by 1
- * Prototype: char *leet(char *);
- * You can only use one if in your code
- * You can only use two loops in your code
- * You are not allowed to use switch
- * You are not allowed to use any ternary operation
- *
- * Return: encoded string `s`
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
 char *leet(char *s)
 {
-	int i, j;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	char *a = "aAeEoOtTlL";
-	char *b = "4433007711";
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; j < 10; j++)
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == a[j])
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
 			{
-				s[i] = b[j];
+				*(s + count) = numbers[i];
+				break;
 			}
 		}
+		count++;
 	}
 
 	return (s);
