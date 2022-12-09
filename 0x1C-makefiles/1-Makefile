@@ -1,5 +1,3 @@
-.PHONY = all compile
-
 CC := gcc
 SRC := main.c school.c
 
