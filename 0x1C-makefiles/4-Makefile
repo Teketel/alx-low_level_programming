@@ -1,0 +1,19 @@
+CC = gcc 							# define compiler
+SRC = main.c school.c				# define src files
+OBJ = $(SRC:.c=.o) 					# define object files
+NAME = school						# define executable name
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic	# gcc flags
+
+all: $(OBJ)
+	$(CC) $(CLFAGS) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all

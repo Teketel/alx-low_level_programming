@@ -1,0 +1,18 @@
+CC = gcc 					# compiler var
+SRC = main.c school.c		# source files
+OBJ = $(SRC:.c=.o) 			# obje files
+NAME = school				# executable
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all

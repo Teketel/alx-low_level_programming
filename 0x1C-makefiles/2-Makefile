@@ -1,0 +1,7 @@
+CC = gcc 						# compiler var
+SRC = main.c school.c			# src files
+OBJ = $(SRC:.c=.o)				# object files
+NAME = school					# executable
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
